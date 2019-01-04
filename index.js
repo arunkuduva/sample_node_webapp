@@ -17,7 +17,7 @@ async function getMyIp() {
 app.get("/", async function(req, resp) {
   try {
     const ipAddress = await getMyIp();
-    resp.send(`Hello World from ${ipAddress}`);
+    resp.send(`Hello Simbu from ${ipAddress}`);
   } catch (e) {
     resp.send(`Error while resolving servers ip address ${e.message}`);
   }
